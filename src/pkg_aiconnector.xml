@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="package" method="upgrade">
+    <name>solution25 AI Connector</name>
+    <packagename>aiconnector</packagename>
+    <author>solution25</author>
+    <authorEmail>info@solution25.com</authorEmail>
+    <authorUrl>https://solution25.com</authorUrl>
+    <creationDate>2026-11</creationDate>
+    <copyright>(C) 2026 solution25</copyright>
+    <license>GNU General Public License version 2 or later</license>
+    <version>1.0.0</version>
+    <description>PKG_AICONNECTOR_XML_DESCRIPTION</description>
+    <packager>solution25</packager>
+    <blockChildUninstall>true</blockChildUninstall>
+    <scriptfile>script.php</scriptfile>
+    <files folder="packages">
+        <file type="component" id="com_aiconnector">com_aiconnector.zip</file>
+        <file type="plugin" id="aiconnector" group="system">plg_system_aiconnector.zip</file>
+        <file type="plugin" id="aiconnector" group="webservices">plg_webservices_aiconnector.zip</file>
+        <file type="plugin" id="aiconnector" group="api-authentication">plg_api-authentication_aiconnector.zip</file>
+    </files>
+    <updateservers>
+        <server type="extension" name="solution25 AI Connector">https://raw.githubusercontent.com/solution25com/mcp-service-joomla-connector-plugin-solution25/main/updates.xml</server>
+    </updateservers>
+    <languages folder="language">
+        <language tag="en-GB">en-GB/pkg_aiconnector.sys.ini</language>
+    </languages>
+</extension>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="component" method="upgrade">
+    <name>com_aiconnector</name>
+    <author>solution25</author>
+    <authorEmail>info@solution25.com</authorEmail>
+    <authorUrl>https://solution25.com</authorUrl>
+    <creationDate>2026-11</creationDate>
+    <copyright>(C) 2026 solution25</copyright>
+    <license>GNU General Public License version 2 or later</license>
+    <version>1.0.0</version>
+    <description>COM_AICONNECTOR_XML_DESCRIPTION</description>
+    <namespace path="src">Solution25\Component\AiConnector</namespace>
+    <install>
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.sql</file>
+        </sql>
+    </install>
+    <uninstall>
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.mysql.sql</file>
+        </sql>
+    </uninstall>
+    <api>
+        <files folder="api">
+            <folder>src</folder>
+        </files>
+    </api>
+    <administration>
+        <menu img="class:robot">COM_AICONNECTOR_MENU</menu>
+        <files folder="admin">
+            <filename>access.xml</filename>
+            <filename>config.xml</filename>
+            <folder>services</folder>
+            <folder>sql</folder>
+            <folder>src</folder>
+            <folder>tmpl</folder>
+        </files>
+        <languages folder="admin/language">
+            <language tag="en-GB">en-GB/com_aiconnector.ini</language>
+            <language tag="en-GB">en-GB/com_aiconnector.sys.ini</language>
+        </languages>
+    </administration>
+</extension>

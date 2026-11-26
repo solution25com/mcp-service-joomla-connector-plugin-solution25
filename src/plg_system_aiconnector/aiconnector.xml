@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="plugin" group="system" method="upgrade">
+    <name>plg_system_aiconnector</name>
+    <author>solution25</author>
+    <authorEmail>info@solution25.com</authorEmail>
+    <authorUrl>https://solution25.com</authorUrl>
+    <creationDate>2026-11</creationDate>
+    <copyright>(C) 2026 solution25</copyright>
+    <license>GNU General Public License version 2 or later</license>
+    <version>1.0.0</version>
+    <description>PLG_SYSTEM_AICONNECTOR_XML_DESCRIPTION</description>
+    <namespace path="src">Solution25\Plugin\System\AiConnector</namespace>
+    <files>
+        <folder plugin="aiconnector">services</folder>
+        <folder>src</folder>
+    </files>
+    <languages>
+        <language tag="en-GB">language/en-GB/plg_system_aiconnector.sys.ini</language>
+    </languages>
+</extension>

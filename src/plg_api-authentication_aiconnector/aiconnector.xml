@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="plugin" group="api-authentication" method="upgrade">
+    <name>plg_api-authentication_aiconnector</name>
+    <author>solution25</author>
+    <authorEmail>info@solution25.com</authorEmail>
+    <authorUrl>https://solution25.com</authorUrl>
+    <creationDate>2026-11</creationDate>
+    <copyright>(C) 2026 solution25</copyright>
+    <license>GNU General Public License version 2 or later</license>
+    <version>1.0.0</version>
+    <description>PLG_API-AUTHENTICATION_AICONNECTOR_XML_DESCRIPTION</description>
+    <namespace path="src">Solution25\Plugin\ApiAuthentication\AiConnector</namespace>
+    <files>
+        <folder plugin="aiconnector">services</folder>
+        <folder>src</folder>
+    </files>
+    <languages>
+        <language tag="en-GB">language/en-GB/plg_api-authentication_aiconnector.sys.ini</language>
+    </languages>
+</extension>
